@@ -27,11 +27,11 @@ async function run() {
       // Execute the API "Add labels to an issue", see 'https://octokit.github.io/rest.js/v18#issues-add-labels'
       const { Octokit } = require("@octokit/rest");
       const octokit = new Octokit({ auth: token });
-      await octokit.issues.deleteLabel({
+      await octokit.issues.removeLabel({
         owner: repo_owner,
         repo: repo_name,
         issue_number: issue_number,
-        labels: labels
+        name: labels
       });
     }
     catch (error) {
