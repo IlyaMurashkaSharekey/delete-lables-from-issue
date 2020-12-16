@@ -1,0 +1,26 @@
+name: 'Delete labels from issue or PR'
+description: 'An action to delete labels from issue or PR.'
+
+inputs:
+  repository:
+    description: 'The name of the repository which the issue or PR is in. For example, IlyaMurashkaSharekey/delete-labels-from-issue'
+    required: true
+    default: ${{ github.repository }}
+  issue_number:
+    description: 'The number of the issue or PR.'
+    required: true
+    default: 'current'
+  labels:
+    description: 'The labels to delete.'
+    required: true
+  token:
+    description: 'The Personal access token (PAT) used to authenticate.'
+    default: ${{ github.token }}
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'edit'
+  color: 'blue'

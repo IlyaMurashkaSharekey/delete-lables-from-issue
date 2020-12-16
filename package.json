@@ -1,0 +1,25 @@
+{
+  "name": "delete-labels-from-issue",
+  "version": "1.0.0",
+  "description": "An action to delete labels from an issue or PR.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ActionsRML/add-labels-to-issue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlyaMurashkaSharekey/delete-labels-from-issue/issues"
+  },
+  "homepage": "https://github.com/IlyaMurashkaSharekey/delete-labels-from-issue#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0",
+    "@octokit/rest": "^18.0.3"
+  }
+}
