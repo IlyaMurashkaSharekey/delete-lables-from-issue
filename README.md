@@ -43,25 +43,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:      
       - name: Delete labels
-        uses: IlyaMurashkaSharekey/delete-labels-from-issue@v1
+        uses: IlyaMurashkaSharekey/delete-labels-from-issue@v1.1
         with:
           issue_number: 5
           labels: label-01
 ```
-
-### Delete multiple labels
-```yaml
-jobs:
-  job1:
-    runs-on: ubuntu-latest
-    steps:      
-      - name: Delete labels
-        uses: IlyaMurashkaSharekey/delete-labels-from-issue@v1
-        with:
-          issue_number: 5
-          labels: |
-            label-01
-            label-02
-```
-##
 
