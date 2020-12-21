@@ -35,7 +35,9 @@ async function run() {
       });
     }
     catch (error) {
-      core.setFailed(error.message);
+      if(error.message !== 'Label does not exist') {
+        core.setFailed(error.message);
+      }
     }
   }
   run();
